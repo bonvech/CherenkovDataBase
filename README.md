@@ -1,2 +1,2 @@
 # CherenkovDataBase
-Data base for Cherenkov light events of EAS for SPHERE-3 calculations
+Data base for calculated EAS Cherenkov light events for SPHERE-3 cosmic ray experiment calculations.

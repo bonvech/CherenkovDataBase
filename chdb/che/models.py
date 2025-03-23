@@ -59,6 +59,7 @@ class Particle(models.Model):
 class Event(models.Model):
     disk = models.ForeignKey(Disk, on_delete=models.DO_NOTHING)
     model_atmosphere = models.ForeignKey(Model_Atmosphere, on_delete=models.DO_NOTHING)
+    model_grid = models.ForeignKey(Model_Grid, on_delete=models.DO_NOTHING)
     model_interaction = models.ForeignKey(Model_Interaction, on_delete=models.DO_NOTHING)
     particle = models.ForeignKey(Particle, on_delete=models.DO_NOTHING)
 

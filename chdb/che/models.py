@@ -6,7 +6,7 @@ class Computer(models.Model):
     name = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.name
+        return self.ip
 
 
 class Disk(models.Model):
@@ -22,13 +22,14 @@ class Model_Atmosphere(models.Model):
     code = models.CharField(max_length=4)
 
     def __str__(self):
-        return self.name
+        return self.code
 
 ModelAtmosphere = Model_Atmosphere
 
 
 class Model_Grid(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=10)
+    fullname = models.CharField(max_length=50)
     spacing = models.FloatField()
 
     def __str__(self):
@@ -38,7 +39,8 @@ ModelGrid = Model_Grid
 
 
 class Model_Interaction(models.Model):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=5)
+    fullname = models.CharField(max_length=20)
 
     def __str__(self):
         return self.name
@@ -51,7 +53,7 @@ class Particle(models.Model):
     code = models.CharField(max_length=4)
 
     def __str__(self):
-        return self.name
+        return self.code
 
 
 class Event(models.Model):

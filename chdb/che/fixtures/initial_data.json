@@ -1,0 +1,286 @@
+[
+    {
+        "model": "che.computer",
+        "pk": 1,
+        "fields": {
+            "ip": "x.x.x.46",
+            "name": "Bobik"
+        }
+    },
+    {
+        "model": "che.computer",
+        "pk": 2,
+        "fields": {
+            "ip": "x.x.x.47",
+            "name": "SPHERE-2"
+        }
+    },
+    {
+        "model": "che.computer",
+        "pk": 3,
+        "fields": {
+            "ip": "x.x.x.50",
+            "name": "White dragon"
+        }
+    },
+    {
+        "model": "che.computer",
+        "pk": 4,
+        "fields": {
+            "ip": "x.x.x.51",
+            "name": "Red dragon"
+        }
+    },
+    {
+        "model": "che.computer",
+        "pk": 5,
+        "fields": {
+            "ip": "x.x.x.52",
+            "name": "SPHERE-HD"
+        }
+    },
+    {
+        "model": "che.computer",
+        "pk": 6,
+        "fields": {
+            "ip": "x.x.x.111",
+            "name": "Big dragon"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 1,
+        "fields": {
+            "computer": 6,
+            "name": "DATA1"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 2,
+        "fields": {
+            "computer": 6,
+            "name": "DATA2"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 3,
+        "fields": {
+            "computer": 6,
+            "name": "DATA3"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 4,
+        "fields": {
+            "computer": 3,
+            "name": "DATA4"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 5,
+        "fields": {
+            "computer": 3,
+            "name": "DATA5"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 6,
+        "fields": {
+            "computer": 3,
+            "name": "DATA6"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 7,
+        "fields": {
+            "computer": 4,
+            "name": "DATA7"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 8,
+        "fields": {
+            "computer": 4,
+            "name": "DATA8"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 9,
+        "fields": {
+            "computer": 4,
+            "name": "DATA9"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 10,
+        "fields": {
+            "computer": 2,
+            "name": "DATA11"
+        }
+    },
+    {
+        "model": "che.disk",
+        "pk": 11,
+        "fields": {
+            "computer": 2,
+            "name": "DATA12"
+        }
+    },
+    {
+        "model": "che.model_atmosphere",
+        "pk": 1,
+        "fields": {
+            "name": "U.S. standard atmosphere as parameterized by Linsley",
+            "code": "1"
+        }
+    },
+    {
+        "model": "che.model_atmosphere",
+        "pk": 2,
+        "fields": {
+            "name": "AT223 Central European atmosphere for Feb. 23, 1993",
+            "code": "3"
+        }
+    },
+    {
+        "model": "che.model_atmosphere",
+        "pk": 3,
+        "fields": {
+            "name": "AT511 Central European atmosphere for May 11, 1993",
+            "code": "4"
+        }
+    },
+    {
+        "model": "che.model_atmosphere",
+        "pk": 4,
+        "fields": {
+            "name": "AT1224 Central European atmosphere for Dec. 24, 1993",
+            "code": "8"
+        }
+    },
+    {
+        "model": "che.model_atmosphere",
+        "pk": 5,
+        "fields": {
+            "name": "South pole atmosphere for March 31, 1997 (MSIS-90-E)",
+            "code": "11"
+        }
+    },
+    {
+        "model": "che.model_grid",
+        "pk": 1,
+        "fields": {
+            "name": "o",
+            "fullname": "ordinary",
+            "spacing": 1.0
+        }
+    },
+    {
+        "model": "che.model_grid",
+        "pk": 2,
+        "fields": {
+            "name": "f",
+            "fullname": "fine",
+            "spacing": 0.5
+        }
+    },
+    {
+        "model": "che.model_grid",
+        "pk": 3,
+        "fields": {
+            "name": "sf",
+            "fullname": "superfine",
+            "spacing": 0.25
+        }
+    },
+    {
+        "model": "che.model_grid",
+        "pk": 4,
+        "fields": {
+            "name": "ssf",
+            "fullname": "supersuperfine",
+            "spacing": 0.2
+        }
+    },
+    {
+        "model": "che.model_interaction",
+        "pk": 1,
+        "fields": {
+            "name": "Q1",
+            "fullname": "QGSJET01"
+        }
+    },
+    {
+        "model": "che.model_interaction",
+        "pk": 2,
+        "fields": {
+            "name": "Q2",
+            "fullname": "QGSJETII-04"
+        }
+    },
+    {
+        "model": "che.model_interaction",
+        "pk": 3,
+        "fields": {
+            "name": "Sb",
+            "fullname": "SIBYLL2.3"
+        }
+    },
+    {
+        "model": "che.particle",
+        "pk": 1,
+        "fields": {
+            "name": "p",
+            "code": "0014"
+        }
+    },
+    {
+        "model": "che.particle",
+        "pk": 2,
+        "fields": {
+            "name": "He",
+            "code": "0402"
+        }
+    },
+    {
+        "model": "che.particle",
+        "pk": 3,
+        "fields": {
+            "name": "N",
+            "code": "1407"
+        }
+    },
+    {
+        "model": "che.particle",
+        "pk": 4,
+        "fields": {
+            "name": "Al",
+            "code": "2613"
+        }
+    },
+    {
+        "model": "che.particle",
+        "pk": 5,
+        "fields": {
+            "name": "S",
+            "code": "3216"
+        }
+    },
+    {
+        "model": "che.particle",
+        "pk": 6,
+        "fields": {
+            "name": "Fe",
+            "code": "5626"
+        }
+    }
+]

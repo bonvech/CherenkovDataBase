@@ -24,12 +24,26 @@ class Model_Atmosphere(models.Model):
     def __str__(self):
         return self.name
 
+ModelAtmosphere = Model_Atmosphere
+
+
+class Model_Grid(models.Model):
+    name = models.CharField(max_length=50)
+    spacing = models.FloatField()
+
+    def __str__(self):
+        return self.name
+
+ModelGrid = Model_Grid
+
 
 class Model_Interaction(models.Model):
     name = models.CharField(max_length=20)
 
     def __str__(self):
         return self.name
+
+ModelInteraction = Model_Interaction
 
 
 class Particle(models.Model):

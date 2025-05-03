@@ -140,7 +140,7 @@
         "pk": 1,
         "fields": {
             "name": "U.S. standard atmosphere as parameterized by Linsley",
-            "code": "1"
+            "code": 1
         }
     },
     {
@@ -148,7 +148,7 @@
         "pk": 2,
         "fields": {
             "name": "AT223 Central European atmosphere for Feb. 23, 1993",
-            "code": "3"
+            "code": 3
         }
     },
     {
@@ -156,7 +156,7 @@
         "pk": 3,
         "fields": {
             "name": "AT511 Central European atmosphere for May 11, 1993",
-            "code": "4"
+            "code": 4
         }
     },
     {
@@ -164,7 +164,7 @@
         "pk": 4,
         "fields": {
             "name": "AT1224 Central European atmosphere for Dec. 24, 1993",
-            "code": "8"
+            "code": 8
         }
     },
     {
@@ -172,7 +172,7 @@
         "pk": 5,
         "fields": {
             "name": "South pole atmosphere for March 31, 1997 (MSIS-90-E)",
-            "code": "11"
+            "code": 11
         }
     },
     {
@@ -240,7 +240,7 @@
         "pk": 1,
         "fields": {
             "name": "p",
-            "code": "0014"
+            "code": 14
         }
     },
     {
@@ -248,7 +248,7 @@
         "pk": 2,
         "fields": {
             "name": "He",
-            "code": "0402"
+            "code": 402
         }
     },
     {
@@ -256,7 +256,7 @@
         "pk": 3,
         "fields": {
             "name": "N",
-            "code": "1407"
+            "code": 1407
         }
     },
     {
@@ -264,7 +264,7 @@
         "pk": 4,
         "fields": {
             "name": "Al",
-            "code": "2613"
+            "code": 2613
         }
     },
     {
@@ -272,7 +272,7 @@
         "pk": 5,
         "fields": {
             "name": "S",
-            "code": "3216"
+            "code": 3216
         }
     },
     {
@@ -280,7 +280,7 @@
         "pk": 6,
         "fields": {
             "name": "Fe",
-            "code": "5626"
+            "code": 5626
         }
     }
 ]

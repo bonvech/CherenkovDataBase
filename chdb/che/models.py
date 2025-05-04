@@ -62,8 +62,8 @@ class Event(models.Model):
     model_interaction = models.ForeignKey(Model_Interaction, on_delete=models.DO_NOTHING)
     model_atmosphere = models.ForeignKey(Model_Atmosphere, on_delete=models.DO_NOTHING)
     particle = models.ForeignKey(Particle, on_delete=models.DO_NOTHING)
-    energy = models.FloatField()
-    theta = models.FloatField()
+    energy = models.DecimalField(max_digits=6, decimal_places=2)
+    theta = models.DecimalField(max_digits=4, decimal_places=2)
     number = models.IntegerField()
     rand1 = models.IntegerField()
     rand2 = models.IntegerField()
@@ -88,3 +88,19 @@ class Event(models.Model):
     costheta = models.FloatField(null=True)
     phix = models.FloatField(null=True)
     phiy = models.FloatField(null=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=[
+                    'model_grid_id',
+                    'model_interaction_id',
+                    'model_atmosphere_id',
+                    'particle_id',
+                    'energy',
+                    'theta',
+                    'number',
+                ],
+                name='event_unique_combination',
+            ),
+        ]

@@ -79,7 +79,7 @@ class Event(models.Model):
     height = models.FloatField()
     par1 = models.FloatField()
     par5 = models.IntegerField()
-    thetap = models.FloatField(null=True)
+    thetap = models.FloatField()
     phip = models.FloatField()
 
     # From protocol
@@ -101,6 +101,6 @@ class Event(models.Model):
                     'theta',
                     'number',
                 ],
-                name='event_unique_combination',
+                name='che_event_unique_combination',
             ),
         ]

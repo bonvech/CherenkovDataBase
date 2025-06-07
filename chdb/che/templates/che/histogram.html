@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Histogram</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+//<![CDATA[
+//jQuery(function($) {
+$(function($) {
+{% if graph_json %}
+    const graphData = {{ graph_json|safe }};
+    Plotly.newPlot('histogram', graphData.data, graphData.layout);
+{% endif %}
+    $('[name="colname"]').on('change', function(evt) {
+        $(this.form).trigger('submit');
+    });
+});
+//]]>
+</script>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+</style>
+</head>
+<body>
+<div id="histogram"></div>
+<br/>
+<table class="form">
+<form method="get">
+{{ form.as_table }}
+<tr>
+<th><br/></th>
+<td>
+<button type="submit">Submit</button>
+</td>
+</tr>
+</form>
+</table>
+</body>
+</html>

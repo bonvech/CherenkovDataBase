@@ -43,3 +43,7 @@ def histogram(request):
             context['graph_json'] = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     return render(request, 'che/histogram.html', context)
+
+
+def index(request):
+    return render(request, 'che/index.html')
